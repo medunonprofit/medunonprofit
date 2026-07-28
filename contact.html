@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — MEDU</title>
+<meta name="description" content="Join MEDU, volunteer, or start a chapter. Get in touch with the MEDU team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="34" height="34"><path d="M4 21 H13 L16 12 L22 30 L26 17 L29 21 H36" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="brand-text">M.E.D.U</span>
+    </a>
+    <nav class="site-nav" id="siteNav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">What We Do</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="chapters.html">Chapters</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary nav-cta">Join MEDU</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Let's find your place at MEDU.</h1>
+      <p>Tell us what you're looking for, whether it's joining as a member, logging volunteer hours, or starting a chapter, and a team member will get back to you.</p>
+    </div>
+  </section>
+
+  <section class="about" style="padding-top:20px;">
+    <div class="wrap contact-two-col">
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="reason">I'm reaching out about</label>
+          <select id="reason" name="reason">
+            <option>Becoming a member</option>
+            <option>Volunteering / requesting hours</option>
+            <option>Starting a new chapter</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+
+      <div class="contact-info-card">
+        <h3>Prefer a quicker route?</h3>
+        <div class="contact-info-row">
+          <div>
+            <strong>Volunteer hours</strong>
+            <p>Use the request links on the <a href="volunteer.html" style="color:var(--brand); text-decoration:underline;">Volunteer page</a> for the fastest turnaround.</p>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div>
+            <strong>Starting a chapter</strong>
+            <p>Check the three-step guide on the <a href="chapters.html" style="color:var(--brand); text-decoration:underline;">Chapters page</a> before you apply.</p>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div>
+            <strong>Response time</strong>
+            <p>We're a student-run team, so expect a reply within a few days, not a few hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="26" height="26"><path d="M4 21 H13 L16 12 L22 30 L26 17 L29 21 H36" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-text">M.E.D.U</span></div>
+    <p class="footer-tag">Medical Exposure &amp; Direct Unity — a youth-led health advocacy movement.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="programs.html">What We Do</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="chapters.html">Chapters</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">© <span id="year"></span> MEDU. Built by students, for students.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
