@@ -3,15 +3,15 @@
    Display: Sora | Body: Inter | Utility/labels: IBM Plex Mono
    =========================================================== */
 :root{
-  --navy: #16233F;
-  --navy-2: #1F345C;
+  --navy: #4c5578;
+  --navy-2: #4c5578;
   --brand: #4C6FA5;
   --brand-soft: #E8EEF8;
   --paper: #FBFAF7;
   --ink: #1B2434;
   --ink-soft: #55617A;
-  --coral: #E1553A;
-  --coral-dark: #BE4127;
+  --pink: #fae3e5;
+  --pink-dark: #F3CACC;
   --line: #DEE4EE;
   --radius: 14px;
   --wrap: 1160px;
