@@ -379,6 +379,40 @@ ul{ margin:0; padding:0; list-style:none; }
   .btn, .pillar-card, .opp-card{ transition:none; }
 }
 
+/* ===== Footer social icons ===== */
+.footer-social{ display:flex; gap:10px; }
+.footer-social a{
+  width:36px; height:36px; border-radius:50%;
+  background: rgba(227,233,255,.08);
+  display:flex; align-items:center; justify-content:center;
+  color: var(--text-soft);
+  transition: background .15s ease, color .15s ease;
+}
+.footer-social a:hover{ background: rgba(227,233,255,.18); color: var(--text); }
+.footer-social svg{ width:17px; height:17px; }
+
+/* ===== Team tabs (About page) ===== */
+.team-tabs{
+  display:flex; gap: 6px; flex-wrap:wrap; justify-content:center;
+  margin-top: 44px; border-bottom: 1px solid var(--line); padding-bottom: 0;
+}
+.team-tab-btn{
+  padding: 12px 22px; font-family:'Inter',sans-serif; font-weight:600; font-size: 14.5px;
+  color: var(--text-soft); border:none; background:none; cursor:pointer;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  transition: color .15s ease, border-color .15s ease;
+}
+.team-tab-btn:hover{ color: var(--text); }
+.team-tab-btn.active{ color: var(--text); border-bottom-color: var(--pink); }
+.team-panel{ display:none; }
+.team-panel.active{
+  display:flex; flex-direction:column; align-items:center; text-align:center; gap: 6px;
+  max-width: 360px; margin: 44px auto 0;
+}
+.team-panel .avatar-mono{ width: 96px; height:96px; font-size: 30px; margin-bottom: 10px; }
+.team-panel h3{ font-size: 22px; margin-bottom: 2px; }
+.team-panel .team-bio-role{ font-size: 14px; margin-bottom: 0; }
+
 /* Keyboard focus visibility */
 a:focus-visible, button:focus-visible{
   outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 4px;
