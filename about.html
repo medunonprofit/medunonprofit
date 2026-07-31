@@ -72,39 +72,32 @@
       <h2 class="section-title-center">Who's behind MEDU</h2>
       <p class="section-sub">Every member of our founding board is a current high school student balancing MEDU with school, sports, and everything else.</p>
 
-      <div class="team-bio-grid">
-        <div class="team-bio-card">
-          <span class="avatar-mono" aria-hidden="true">JS</span>
-          <div>
-            <h3>Jia Salva</h3>
-            <p class="team-bio-role">Founder &amp; President · High School Junior</p>
-            <p>Jia founded MEDU to give students a real way into healthcare before college, and now leads strategy across every chapter.</p>
-          </div>
-        </div>
-        <div class="team-bio-card">
-          <span class="avatar-mono" aria-hidden="true">EC</span>
-          <div>
-            <h3>Ella Cheng</h3>
-            <p class="team-bio-role">Outreach Director · High School Junior</p>
-            <p>Ella builds partnerships with local clinics and shelters, and helps new chapters find their first community projects.</p>
-          </div>
-        </div>
-        <div class="team-bio-card">
-          <span class="avatar-mono" aria-hidden="true">MR</span>
-          <div>
-            <h3>Monisa Suman Ravi</h3>
-            <p class="team-bio-role">Outreach Director · High School Junior</p>
-            <p>Monisa leads member recruitment and keeps chapters connected through MEDU's international buddy program.</p>
-          </div>
-        </div>
-        <div class="team-bio-card">
-          <span class="avatar-mono" aria-hidden="true">NV</span>
-          <div>
-            <h3>Nikita Venkateswaran</h3>
-            <p class="team-bio-role">Outreach Director · High School Junior</p>
-            <p>Nikita coordinates volunteer hour tracking and academic credit documentation across all chapters.</p>
-          </div>
-        </div>
+      <div class="team-tabs" role="tablist" aria-label="Team members">
+        <button class="team-tab-btn active" role="tab" aria-selected="true" aria-controls="panel-jia" id="tab-jia" data-panel="panel-jia">Jia Savla</button>
+        <button class="team-tab-btn" role="tab" aria-selected="false" aria-controls="panel-ella" id="tab-ella" data-panel="panel-ella">Ella Cheng</button>
+        <button class="team-tab-btn" role="tab" aria-selected="false" aria-controls="panel-monisa" id="tab-monisa" data-panel="panel-monisa">Monisa Suman Ravi</button>
+        <button class="team-tab-btn" role="tab" aria-selected="false" aria-controls="panel-nikita" id="tab-nikita" data-panel="panel-nikita">Nikita Venkateswaran</button>
+      </div>
+
+      <div class="team-panel active" id="panel-jia" role="tabpanel" aria-labelledby="tab-jia">
+        <span class="avatar-mono" aria-hidden="true">JS</span>
+        <h3>Jia Savla</h3>
+        <p class="team-bio-role">Founder &amp; President · High School Junior</p>
+      </div>
+      <div class="team-panel" id="panel-ella" role="tabpanel" aria-labelledby="tab-ella">
+        <span class="avatar-mono" aria-hidden="true">EC</span>
+        <h3>Ella Cheng</h3>
+        <p class="team-bio-role">Outreach Director · High School Junior</p>
+      </div>
+      <div class="team-panel" id="panel-monisa" role="tabpanel" aria-labelledby="tab-monisa">
+        <span class="avatar-mono" aria-hidden="true">MR</span>
+        <h3>Monisa Suman Ravi</h3>
+        <p class="team-bio-role">Outreach Director · High School Junior</p>
+      </div>
+      <div class="team-panel" id="panel-nikita" role="tabpanel" aria-labelledby="tab-nikita">
+        <span class="avatar-mono" aria-hidden="true">NV</span>
+        <h3>Nikita Venkateswaran</h3>
+        <p class="team-bio-role">Outreach Director · High School Junior</p>
       </div>
     </div>
   </section>
@@ -131,6 +124,12 @@
       <a href="chapters.html">Chapters</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div class="footer-social" aria-label="MEDU on social media">
+      <a href="https://www.instagram.com/medu.nonprofit.official/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+      <a href="https://discord.com/invite/3sBc5xcNNs?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnRCWBwGo2tV-VaJMS8mDqkLi_FtgaWpZnKmTisYq5dM5f4jfz2o9tP55YroI_aem_68qM52cHA9OPyX_MiEx5Cg" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="6" width="16" height="12" rx="4"/><circle cx="9" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.2" fill="currentColor" stroke="none"/><path d="M8 6 L9 3.5 M16 6 L15 3.5"/></svg></a>
+      <a href="https://www.linkedin.com/company/medunonprofit/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.5" r="1" fill="currentColor" stroke="none"/><path d="M11 17 V10 M11 13 C11 10.5 15 10.5 15 13 V17"/></svg></a>
+      <a href="mailto:medu.nonprofit@gmail.com" aria-label="Email MEDU"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7 L12 13 L21 7"/></svg></a>
+    </div>
     <p class="footer-copy">© <span id="year"></span> MEDU. Built by students, for students.</p>
   </div>
 </footer>
