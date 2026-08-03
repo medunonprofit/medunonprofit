@@ -42,14 +42,16 @@
 
   <section class="about" style="padding-top:20px;">
     <div class="wrap contact-two-col">
-      <form class="contact-form" id="contactForm">
+      <div>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="New message from the MEDU website">
         <div class="form-row">
           <label for="name">Full name</label>
           <input type="text" id="name" name="name" required>
         </div>
         <div class="form-row">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="_replyto" required>
         </div>
         <div class="form-row">
           <label for="reason">I'm reaching out about</label>
@@ -62,10 +64,13 @@
         </div>
         <div class="form-row">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="formStatus" style="margin-top:14px; font-size:14px; display:none;"></p>
       </form>
+      <p style="margin-top:14px; font-size:13.5px; color:var(--text-soft);">Prefer email directly? Reach us at <a href="mailto:medu.nonprofit@gmail.com" style="color:var(--blue); text-decoration:underline;">medu.nonprofit@gmail.com</a>.</p>
+      </div>
 
       <div class="contact-info-card">
         <h3>Prefer a quicker route?</h3>

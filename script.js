@@ -22,25 +22,40 @@ const onScroll = () => {
 document.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
-// Contact form -> opens a pre-filled email to MEDU
+// Contact form -> submits to Formspree, shows a status message
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const reason = document.getElementById('reason').value;
-    const message = document.getElementById('message').value.trim();
+    const status = document.getElementById('formStatus');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
 
-    const subject = `MEDU contact form: ${reason}`;
-    const body =
-      `Name: ${name}\n` +
-      `Email: ${email}\n` +
-      `Reason: ${reason}\n\n` +
-      `${message}`;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
 
-    const mailtoLink = `mailto:medu.nonprofit@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+        status.textContent = "Thanks — your message is on its way. We'll get back to you soon.";
+        status.style.color = 'var(--text)';
+      } else {
+        status.textContent = "Something went wrong. Please try again, or email medu.nonprofit@gmail.com directly.";
+        status.style.color = 'var(--pink)';
+      }
+    } catch (err) {
+      status.textContent = "Something went wrong. Please try again, or email medu.nonprofit@gmail.com directly.";
+      status.style.color = 'var(--pink)';
+    }
+
+    status.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send message';
   });
 }
 
