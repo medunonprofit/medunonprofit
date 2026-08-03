@@ -22,8 +22,27 @@ const onScroll = () => {
 document.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
+// Contact form -> opens a pre-filled email to MEDU
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const reason = document.getElementById('reason').value;
+    const message = document.getElementById('message').value.trim();
+
+    const subject = `MEDU contact form: ${reason}`;
+    const body =
+      `Name: ${name}\n` +
+      `Email: ${email}\n` +
+      `Reason: ${reason}\n\n` +
+      `${message}`;
+
+    const mailtoLink = `mailto:medu.nonprofit@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  });
+}
 
 // Team tabs (About page)
 const teamTabs = document.querySelectorAll('.team-tab-btn');
@@ -42,3 +61,6 @@ if (teamTabs.length) {
     });
   });
 }
+
+// Footer year
+document.getElementById('year').textContent = new Date().getFullYear();
