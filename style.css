@@ -5,11 +5,11 @@
 :root{
   --bg: #4C5578;          /* main dark background */
   --bg-deep: #3A4160;     /* darker band, header/footer/CTA sections */
-  --surface: #5E6686;     /* card surface, lifted off the bg */
+  --surface: #6C7496;     /* card surface, lifted off the bg */
   --paper: #FFF8F2;       /* off-white accent surface, used sparingly */
 
   --text: #E3E9FF;        /* headings + primary light text */
-  --text-soft: #D2D8F5;   /* muted body copy on dark backgrounds */
+  --text-soft: #DCE1FA;   /* muted body copy on dark backgrounds */
   --ink: #2E3350;         /* dark text used on paper/off-white surfaces */
   --ink-soft: #565F87;    /* muted dark text on paper surfaces */
 
@@ -19,7 +19,7 @@
   --pink-soft: #FAE3E5;   /* soft pink — subtle tints, quote text */
   --brown: #E0AB81;       /* dividers, secondary accents */
 
-  --line: rgba(227,233,255,0.14);
+  --line: rgba(227,233,255,0.26);
   --radius: 14px;
   --wrap: 1160px;
 }
@@ -205,7 +205,7 @@ ul{ margin:0; padding:0; list-style:none; }
   color: var(--pink); display:block; margin-bottom: 18px;
 }
 .pillar-icon{
-  width: 52px; height: 52px; border-radius: 12px; background: rgba(139,160,253,.16); color: var(--blue);
+  width: 52px; height: 52px; border-radius: 12px; background: rgba(139,160,253,.24); color: var(--blue);
   display:flex; align-items:center; justify-content:center; margin-bottom: 18px;
 }
 .pillar-card h3{ font-size: 19px; margin-bottom: 8px; }
@@ -215,15 +215,15 @@ ul{ margin:0; padding:0; list-style:none; }
 .volunteer{ padding: 96px 0; background: var(--bg-deep); }
 .opp-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
 .opp-card{
-  background: rgba(227,233,255,.05);
+  background: rgba(227,233,255,.09);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 32px 26px;
   transition: background .18s ease, border-color .18s ease;
 }
-.opp-card:hover{ background: rgba(227,233,255,.08); border-color: rgba(227,233,255,.3); }
+.opp-card:hover{ background: rgba(227,233,255,.14); border-color: rgba(227,233,255,.4); }
 .opp-icon{
-  width: 48px; height:48px; border-radius: 12px; background: rgba(243,202,204,.16); color: var(--pink);
+  width: 48px; height:48px; border-radius: 12px; background: rgba(243,202,204,.24); color: var(--pink);
   display:flex; align-items:center; justify-content:center; margin-bottom: 20px;
 }
 .opp-card h3{ font-size: 19px; }
@@ -302,11 +302,13 @@ ul{ margin:0; padding:0; list-style:none; }
   display:flex; gap: 20px; align-items:flex-start;
 }
 .avatar-mono{
-  flex: 0 0 auto; width: 56px; height: 56px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--blue), var(--pink));
+  flex: 0 0 auto; width: 128px; height: 156px; border-radius: 22px;
+  background: linear-gradient(160deg, var(--pink-soft), var(--pink));
+  border: 3px solid var(--blue);
   color: var(--ink); display:flex; align-items:center; justify-content:center;
-  font-family:'Sora',sans-serif; font-weight:700; font-size: 16px; letter-spacing:.02em;
+  font-family:'Sora',sans-serif; font-weight:700; font-size: 30px; letter-spacing:.02em;
   overflow:hidden; object-fit:cover;
+  box-shadow: 0 14px 30px rgba(15,18,32,.3);
 }
 .team-bio-card h3{ font-size: 18px; margin-bottom: 2px; }
 .team-bio-role{ font-size: 13px; color: var(--pink); font-weight:600; margin-bottom: 10px; }
@@ -383,12 +385,12 @@ ul{ margin:0; padding:0; list-style:none; }
 .footer-social{ display:flex; gap:10px; }
 .footer-social a{
   width:36px; height:36px; border-radius:50%;
-  background: rgba(227,233,255,.08);
+  background: rgba(227,233,255,.12);
   display:flex; align-items:center; justify-content:center;
   color: var(--text-soft);
   transition: background .15s ease, color .15s ease;
 }
-.footer-social a:hover{ background: rgba(227,233,255,.18); color: var(--text); }
+.footer-social a:hover{ background: rgba(227,233,255,.26); color: var(--text); }
 .footer-social svg{ width:17px; height:17px; }
 
 /* ===== Team tabs (About page) ===== */
@@ -409,9 +411,22 @@ ul{ margin:0; padding:0; list-style:none; }
   display:flex; flex-direction:column; align-items:center; text-align:center; gap: 6px;
   max-width: 360px; margin: 44px auto 0;
 }
-.team-panel .avatar-mono{ width: 96px; height:96px; font-size: 30px; margin-bottom: 10px; }
+.team-panel .avatar-mono{ width: 168px; height: 204px; font-size: 36px; border-radius: 26px; margin-bottom: 6px; }
 .team-panel h3{ font-size: 22px; margin-bottom: 2px; }
 .team-panel .team-bio-role{ font-size: 14px; margin-bottom: 0; }
+
+/* ===== NJ / local volunteer callout ===== */
+.nj-callout{
+  display:flex; align-items:center; justify-content:space-between; gap: 28px; flex-wrap:wrap;
+  background: linear-gradient(135deg, rgba(139,160,253,.16), rgba(243,202,204,.14));
+  border: 1px solid rgba(227,233,255,.28);
+  border-radius: var(--radius);
+  padding: 30px 32px;
+  margin: 12px 0 48px;
+}
+.nj-callout h3{ font-size: 19px; margin: 0 0 6px; }
+.nj-callout p{ margin: 0; max-width: 480px; font-size: 14.5px; }
+.nj-callout .btn{ flex-shrink:0; }
 
 /* Keyboard focus visibility */
 a:focus-visible, button:focus-visible{
