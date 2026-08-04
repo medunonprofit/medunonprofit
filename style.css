@@ -302,12 +302,12 @@ ul{ margin:0; padding:0; list-style:none; }
   display:flex; gap: 20px; align-items:flex-start;
 }
 .avatar-mono{
-  flex: 0 0 auto; width: 128px; height: 156px; border-radius: 22px;
+  flex: 0 0 auto; width: 168px; height: 204px; border-radius: 22px;
   background: linear-gradient(160deg, var(--pink-soft), var(--pink));
   border: 3px solid var(--blue);
   color: var(--ink); display:flex; align-items:center; justify-content:center;
   font-family:'Sora',sans-serif; font-weight:700; font-size: 30px; letter-spacing:.02em;
-  overflow:hidden; object-fit:cover;
+  overflow:hidden; object-fit:cover; object-position: center top;
   box-shadow: 0 14px 30px rgba(15,18,32,.3);
 }
 .team-bio-card h3{ font-size: 18px; margin-bottom: 2px; }
@@ -411,7 +411,7 @@ ul{ margin:0; padding:0; list-style:none; }
   display:flex; flex-direction:column; align-items:center; text-align:center; gap: 6px;
   max-width: 360px; margin: 44px auto 0;
 }
-.team-panel .avatar-mono{ width: 168px; height: 204px; font-size: 36px; border-radius: 26px; margin-bottom: 6px; }
+.team-panel .avatar-mono{ width: 216px; height: 262px; font-size: 40px; border-radius: 28px; margin-bottom: 6px; }
 .team-panel h3{ font-size: 22px; margin-bottom: 2px; }
 .team-panel .team-bio-role{ font-size: 14px; margin-bottom: 0; }
 
