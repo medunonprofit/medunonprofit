@@ -1,123 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — MEDU</title>
-<meta name="description" content="Join MEDU, volunteer, or start a chapter. Get in touch with the MEDU team.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MEDU</title>
+  <meta name="description" content="Join MEDU, volunteer, or start a chapter. Get in touch with the MEDU team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="site-header" id="siteHeader">
-  <div class="wrap header-inner">
-    <a href="index.html" class="brand">
-      <img src="logo.png" alt="MEDU logo" class="brand-mark-img" style="height:34px;width:auto;">
-      <span class="brand-text">M.E.D.U</span>
-    </a>
-    <nav class="site-nav" id="siteNav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="programs.html">What We Do</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="chapters.html">Chapters</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-    <a href="contact.html" class="btn btn-primary nav-cta">Join MEDU</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<main>
-  <section class="page-header">
-    <div class="wrap">
-      <p class="eyebrow">Get in touch</p>
-      <h1>Let's find your place at MEDU.</h1>
-      <p>Tell us what you're looking for, whether it's joining as a member, logging volunteer hours, or starting a chapter, and a team member will get back to you.</p>
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="MEDU logo" class="brand-mark-img" style="height:34px;width:auto;">
+        <span class="brand-text">M.E.D.U</span>
+      </a>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="chapters.html">Chapters</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Join MEDU</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-  </section>
+  </header>
 
-  <section class="about" style="padding-top:20px;">
-    <div class="wrap contact-two-col">
-      <div>
-      <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="hidden" name="_subject" value="New message from the MEDU website">
-        <div class="form-row">
-          <label for="name">Full name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-row">
-          <label for="email">Email address</label>
-          <input type="email" id="email" name="_replyto" required>
-        </div>
-        <div class="form-row">
-          <label for="reason">I'm reaching out about</label>
-          <select id="reason" name="reason">
-            <option>Becoming a member</option>
-            <option>Volunteering / requesting hours</option>
-            <option>Starting a new chapter</option>
-            <option>Something else</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send message</button>
-        <p id="formStatus" style="margin-top:14px; font-size:14px; display:none;"></p>
-      </form>
-      <p style="margin-top:14px; font-size:13.5px; color:var(--text-soft);">Prefer email directly? Reach us at <a href="mailto:medu.nonprofit@gmail.com" style="color:var(--blue); text-decoration:underline;">medu.nonprofit@gmail.com</a>.</p>
+  <main>
+    <section class="page-header">
+      <div class="wrap">
+        <p class="eyebrow">Get in touch</p>
+        <h1>Let's find your place at MEDU.</h1>
+        <p>Tell us what you're looking for, whether it's joining as a member, logging volunteer hours, or starting a
+          chapter, and a team member will get back to you.</p>
       </div>
+    </section>
 
-      <div class="contact-info-card">
-        <h3>Prefer a quicker route?</h3>
-        <div class="contact-info-row">
-          <div>
-            <strong>Volunteer hours</strong>
-            <p>Use the request links on the <a href="volunteer.html" style="color:var(--brand); text-decoration:underline;">Volunteer page</a> for the fastest turnaround.</p>
-          </div>
+    <section class="about" style="padding-top:20px;">
+      <div class="wrap contact-two-col">
+        <div>
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="New message from the MEDU website">
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="_replyto" required>
+            </div>
+            <div class="form-row">
+              <label for="reason">I'm reaching out about</label>
+              <select id="reason" name="reason">
+                <option>Becoming a member</option>
+                <option>Volunteering / requesting hours</option>
+                <option>Starting a new chapter</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p id="formStatus" style="margin-top:14px; font-size:14px; display:none;"></p>
+          </form>
+          <p style="margin-top:14px; font-size:13.5px; color:var(--text-soft);">Prefer email directly? Reach us at <a
+              href="mailto:medu.nonprofit@gmail.com"
+              style="color:var(--blue); text-decoration:underline;">medu.nonprofit@gmail.com</a>.</p>
         </div>
-        <div class="contact-info-row">
-          <div>
-            <strong>Starting a chapter</strong>
-            <p>Check the three-step guide on the <a href="chapters.html" style="color:var(--brand); text-decoration:underline;">Chapters page</a> before you apply.</p>
+
+        <div class="contact-info-card">
+          <h3>Prefer a quicker route?</h3>
+          <div class="contact-info-row">
+            <div>
+              <strong>Volunteer hours</strong>
+              <p>Use the request links on the <a href="volunteer.html"
+                  style="color:var(--brand); text-decoration:underline;">Volunteer page</a> for the fastest turnaround.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="contact-info-row">
-          <div>
-            <strong>Response time</strong>
-            <p>We're a student-run team, so expect a reply within a few days, not a few hours.</p>
+          <div class="contact-info-row">
+            <div>
+              <strong>Starting a chapter</strong>
+              <p>Check the three-step guide on the <a href="chapters.html"
+                  style="color:var(--brand); text-decoration:underline;">Chapters page</a> before you apply.</p>
+            </div>
+          </div>
+          <div class="contact-info-row">
+            <div>
+              <strong>Response time</strong>
+              <p>We're a student-run team, so expect a reply within a few days, not a few hours.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="brand footer-brand"><img src="logo.png" alt="MEDU logo" class="brand-mark-img" style="height:26px;width:auto;"><span class="brand-text">M.E.D.U</span></div>
-    <p class="footer-tag">Medical Exposure &amp; Direct Unity — a youth-led health advocacy movement.</p>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="about.html">About</a>
-      <a href="programs.html">What We Do</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="chapters.html">Chapters</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="footer-social" aria-label="MEDU on social media">
-      <a href="https://www.instagram.com/medu.nonprofit.official/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
-      <a href="https://discord.com/invite/3sBc5xcNNs?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnRCWBwGo2tV-VaJMS8mDqkLi_FtgaWpZnKmTisYq5dM5f4jfz2o9tP55YroI_aem_68qM52cHA9OPyX_MiEx5Cg" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="6" width="16" height="12" rx="4"/><circle cx="9" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.2" fill="currentColor" stroke="none"/><path d="M8 6 L9 3.5 M16 6 L15 3.5"/></svg></a>
-      <a href="https://www.linkedin.com/company/medunonprofit/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.5" r="1" fill="currentColor" stroke="none"/><path d="M11 17 V10 M11 13 C11 10.5 15 10.5 15 13 V17"/></svg></a>
-      <a href="mailto:medu.nonprofit@gmail.com" aria-label="Email MEDU"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7 L12 13 L21 7"/></svg></a>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="brand footer-brand"><img src="images/logo.png" alt="MEDU logo" class="brand-mark-img"
+          style="height:75px;width:auto;"><span class="brand-text">M.E.D.U</span></div>
+      <p class="footer-tag">Medical Exposure &amp; Direct Unity — a youth-led health advocacy movement.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="about.html">About</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="chapters.html">Chapters</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-social" aria-label="MEDU on social media">
+        <a href="https://www.instagram.com/medu.nonprofit.official/" target="_blank" rel="noopener"
+          aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.2" cy="6.8" r="1" />
+          </svg></a>
+        <a href="https://discord.com/invite/3sBc5xcNNs?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnRCWBwGo2tV-VaJMS8mDqkLi_FtgaWpZnKmTisYq5dM5f4jfz2o9tP55YroI_aem_68qM52cHA9OPyX_MiEx5Cg"
+          target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8">
+            <rect x="4" y="6" width="16" height="12" rx="4" />
+            <circle cx="9" cy="12" r="1.2" fill="currentColor" stroke="none" />
+            <circle cx="15" cy="12" r="1.2" fill="currentColor" stroke="none" />
+            <path d="M8 6 L9 3.5 M16 6 L15 3.5" />
+          </svg></a>
+        <a href="https://www.linkedin.com/company/medunonprofit/about/" target="_blank" rel="noopener"
+          aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="4" />
+            <line x1="7" y1="10" x2="7" y2="17" />
+            <circle cx="7" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            <path d="M11 17 V10 M11 13 C11 10.5 15 10.5 15 13 V17" />
+          </svg></a>
+        <a href="mailto:medu.nonprofit@gmail.com" aria-label="Email MEDU"><svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="M3 7 L12 13 L21 7" />
+          </svg></a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> MEDU. Built by students, for students.</p>
     </div>
-    <p class="footer-copy">© <span id="year"></span> MEDU. Built by students, for students.</p>
-  </div>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
